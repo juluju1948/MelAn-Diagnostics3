@@ -1,0 +1,139 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 4.5rem;
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#hero {
+    background: url() no-repeat center center;
+    background-size: 450px 200px;
+    color: rgb(13, 11, 11);
+    padding: 50px 0;
+    text-align: center;
+}
+
+#hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#hero .btn:hover {
+    background: #ff8533;
+}
+
+section {
+    padding: 40px 0;
+}
+
+#servicios .servicios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#servicios .servicio {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 280px;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto label {
+    margin-top: 10px;
+}
+
+#contacto input,
+#contacto textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contacto button {
+    margin-top: 20px;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#contacto button:hover {
+    background: #555;
+}
+
+.contact-info p {
+    margin-top: 10px;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
