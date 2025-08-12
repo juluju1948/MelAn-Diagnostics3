@@ -49,7 +49,6 @@ nav ul li a {
 }
 
 #hero {
-    background: url() no-repeat center center;
     background-size: 450px 200px;
     color: rgb(13, 11, 11);
     padding: 50px 0;
@@ -90,10 +89,6 @@ section {
     min-width: 280px;
 }
 
-#contacto form {
-    display: flex;
-    flex-direction: column;
-}
 
 #contacto label {
     margin-top: 10px;
@@ -136,4 +131,92 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
+}
+/* ===== Estilos para la sección de contacto ===== */
+#contacto {
+    padding: 40px 20px;
+    background-color: #f8f9fa; /* Fondo suave */
+}
+
+#contacto h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#contacto label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+#contacto input,
+#contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#contacto textarea {
+    min-height: 100px;
+}
+
+#contacto button[type="submit"] {
+    margin-top: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contacto button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Botón de WhatsApp */
+#contacto a[href*="wa.me"] {
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#contacto a[href*="wa.me"] {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+/* Información de contacto */
+#contacto .contact-info p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 15px;
+}
+
+/* Mapa */
+#contacto iframe {
+    border-radius: 10px;
+    margin-top: 15px;
 }
