@@ -220,3 +220,59 @@ footer {
     border-radius: 10px;
     margin-top: 15px;
 }
+/* ===================== */
+/* HERO SECTION ESTILO   */
+/* ===================== */
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('img/hero-bg.jpg') center/cover no-repeat;
+  color: white;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 25px;
+}
+
+#hero .btn-cta {
+  background-color: #ff5722;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#hero .btn-cta:hover {
+  background-color: #e64a19;
+}
+
+/* Ajuste en pantallas pequeñas */
+@media (max-width: 768px) {
+  #hero {
+    padding: 60px 15px;
+  }
+  #hero h1 {
+    font-size: 2rem;
+  }
+  #hero p {
+    font-size: 1rem;
+  }
+}
