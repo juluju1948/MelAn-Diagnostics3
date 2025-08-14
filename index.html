@@ -3,147 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MelAn Diagnostics - Taller Automotriz en Puebla</title>
-    <meta name="description" content="MelAn Diagnostics ofrece diagnóstico automotriz, repintado y reparación de frenos ABS en Puebla. Agenda tu cita hoy.">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="MelAn Diagnostics - Taller automotriz en Puebla especializado en diagnóstico, mecánica, frenos y repintado.">
+    <meta name="keywords" content="taller automotriz Puebla, diagnóstico automotriz, reparación de frenos, repintado automotriz">
+    <title>MelAn Diagnostics</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/4b9c1a82d2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- ===== Header ===== -->
+
+    <!-- ENCABEZADO -->
     <header>
-        <div class="container header-container">
-            <div class="logo">
-                <h1>MelAn Diagnostics</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#nosotros">Sobre Nosotros</a></li>
-                    <li><a href="#testimonios">Testimonios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>MelAn Diagnostics</h1>
+        <p>Tu taller automotriz de confianza en Puebla</p>
+        <a href="#contacto" class="btn-cta">Agenda tu cita</a>
     </header>
 
-    <!-- ===== Hero con CTA ===== -->
-    <section id="hero">
-        <div class="container hero-container">
-            <h2>Diagnóstico y Repintado Automotriz en Puebla</h2>
-            <p>Confía tu vehículo a profesionales. Resultados rápidos y garantizados.</p>
-            <a href="#contacto" class="btn-cta">Agenda tu cita hoy</a>
-        </div>
-    </section>
-
-    <!-- ===== Sección de Servicios ===== -->
+    <!-- SERVICIOS -->
     <section id="servicios">
-        <div class="container">
-            <h2>Nuestros Servicios</h2>
-            <div class="servicios-grid">
-
-                <div class="servicio">
-                    <img src="iconos/mecanica.png" alt="Sistema Mecánico">
-                    <h4>Sistema Mecánico</h4>
-                    <p>Revisión y reparación completa de sistemas mecánicos de tu vehículo.</p>
-                </div>
-
-                <div class="servicio">
-                    <img src="iconos/electrico.png" alt="Sistema Eléctrico">
-                    <h4>Sistema Eléctrico</h4>
-                    <p>Diagnóstico y solución de problemas eléctricos y electrónicos.</p>
-                </div>
-
-                <div class="servicio">
-                    <img src="iconos/frenos.png" alt="Sistema de Frenos">
-                    <h4>Frenos y ABS</h4>
-                    <p>Revisión, mantenimiento y reparación de frenos y sistema ABS.</p>
-                </div>
-
-                <div class="servicio">
-                    <img src="iconos/repintado.png" alt="Repintado Automotriz">
-                    <h4>Repintado Automotriz</h4>
-                    <p>Servicio completo de repintado y restauración de carrocería.</p>
-                </div>
-
-                <div class="servicio">
-                    <img src="iconos/pulido.png" alt="Pulido Automotriz">
-                    <h4>Pulido y Restauración</h4>
-                    <p>Mejora la apariencia y protege la pintura de tu vehículo.</p>
-                </div>
-
+        <h2>Servicios</h2>
+        <div class="servicios-container">
+            <div class="servicio">
+                <i class="fas fa-cogs"></i>
+                <h3>Sistema Mecánico</h3>
+                <p>Mantenimiento y reparación general del motor, transmisión y más.</p>
+            </div>
+            <div class="servicio">
+                <i class="fas fa-bolt"></i>
+                <h3>Sistema Eléctrico</h3>
+                <p>Diagnóstico y reparación de fallas eléctricas y electrónicas.</p>
+            </div>
+            <div class="servicio">
+                <i class="fas fa-car-crash"></i>
+                <h3>Sistema de Frenos</h3>
+                <p>Reparación y ajuste de frenos ABS y convencionales.</p>
+            </div>
+            <div class="servicio">
+                <i class="fas fa-spray-can"></i>
+                <h3>Repintado Automotriz</h3>
+                <p>Pintura profesional y restauración estética de vehículos.</p>
             </div>
         </div>
     </section>
 
-    <!-- ===== Sobre Nosotros ===== -->
+    <!-- SOBRE NOSOTROS -->
     <section id="nosotros">
-        <div class="container">
-            <h2>Sobre Nosotros</h2>
-            <p>MelAn Diagnostics es un taller con años de experiencia en diagnóstico automotriz, pintura y reparación. Nuestro objetivo es ofrecer servicios de alta calidad con resultados garantizados y un trato cercano.</p>
-        </div>
+        <h2>Sobre Nosotros</h2>
+        <p>En <strong>MelAn Diagnostics</strong> contamos con un equipo especializado y herramientas modernas para brindarte el mejor servicio automotriz en Puebla.</p>
     </section>
 
-    <!-- ===== Testimonios ===== -->
+    <!-- TESTIMONIOS -->
     <section id="testimonios">
-        <div class="container">
-            <h2>Testimonios</h2>
-            <div class="testimonios-grid">
-                <div class="testimonial">
-                    <p>"Excelente servicio y atención. Mi auto nunca ha estado en mejores manos."</p>
-                    <footer>- Juan P.</footer>
-                </div>
-                <div class="testimonial">
-                    <p>"Recomiendo MelAn Diagnostics. Servicio rápido y confiable."</p>
-                    <footer>- María L.</footer>
-                </div>
-            </div>
-        </div>
+        <h2>Testimonios</h2>
+        <blockquote>
+            "Excelente servicio, mi auto quedó como nuevo" - Carlos G.
+        </blockquote>
+        <blockquote>
+            "Muy profesionales y rápidos" - Ana M.
+        </blockquote>
     </section>
 
-    <!-- ===== Contacto ===== -->
+    <!-- UBICACIÓN -->
+    <section id="ubicacion">
+        <h2>Ubicación</h2>
+        <div id="mapa">
+            <iframe 
+                src="https://www.google.com/maps?q=18.953452,-98.237191&hl=es;z=16&output=embed" 
+                width="100%" 
+                height="350" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+        <a href="https://www.google.com/maps?q=18.953452,-98.237191" target="_blank" class="btn-maps">
+            <i class="fas fa-map-marker-alt"></i> Ver en Google Maps
+        </a>
+    </section>
+
+    <!-- CONTACTO -->
     <section id="contacto">
-        <div class="container">
-            <h2>Contacto</h2>
-
-            <form action="https://formspree.io/f/xnnzlkeo" method="POST">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-
-            <div class="contacto-extra">
-                <a href="https://wa.me/522226316410?text=Hola%20quiero%20información%20sobre%20sus%20servicios" target="_blank">💬 Contactar por WhatsApp</a>
-
-                <p>Teléfono: <a href="tel:+522226316410">222 631 6410</a></p>
-                <p>Ubicación: Priv. Artículo 30 7-89, Constitución Mexicana, 72499 Puebla</p>
-
-                <div class="map-container">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3762.197!2d-98.237191!3d18.953452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1691856000000!5m2!1ses!2smx" 
-                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-                    </iframe>
-                </div>
-            </div>
-        </div>
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo" required>
+            <input type="tel" placeholder="Teléfono" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+        <a href="https://wa.me/522221234567?text=Hola,%20quiero%20informes%20sobre%20sus%20servicios" target="_blank" class="btn-whatsapp">
+            <i class="fab fa-whatsapp"></i> Enviar WhatsApp
+        </a>
     </section>
 
-    <!-- ===== Footer ===== -->
+    <!-- PIE DE PÁGINA -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 MelAn Diagnostics. Todos los derechos reservados.</p>
-        </div>
+        <p>&copy; 2025 MelAn Diagnostics. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>

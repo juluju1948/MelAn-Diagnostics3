@@ -1,243 +1,173 @@
-/* ===== Reset básico ===== */
-* {
+/* ====== ESTILOS GENERALES ====== */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-body {
-    line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
 }
 
-/* ===== Contenedor ===== */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* ===== Header ===== */
-header {
-    background-color: #1e1e1e;
-    color: white;
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-header .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-    color: #ff9800;
-}
-
-/* ===== Hero ===== */
-#hero {
-    background: url('imagenes/hero-taller.jpg') center/cover no-repeat;
-    color: white;
+h1, h2, h3 {
     text-align: center;
-    padding: 120px 20px;
+    color: #222;
 }
 
-#hero h2 {
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ====== ENCABEZADO ====== */
+header {
+    background: linear-gradient(90deg, #003366, #006699);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    margin-bottom: 10px;
 }
 
-#hero p {
+header p {
     font-size: 1.2rem;
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
 .btn-cta {
-    background-color: #ff9800;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 8px;
-    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: #222;
+    border-radius: 5px;
     font-weight: bold;
-    transition: background 0.3s;
 }
 
-.btn-cta:hover {
-    background-color: #e68a00;
-}
-
-/* ===== Sección de Servicios ===== */
+/* ====== SERVICIOS ====== */
 #servicios {
-    padding: 80px 0;
-    background-color: #fff;
+    padding: 40px 20px;
+    background: white;
 }
 
-#servicios h2 {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 2rem;
-    color: #1e1e1e;
-}
-
-.servicios-grid {
+.servicios-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .servicio {
-    background-color: #f1f1f1;
-    padding: 30px 20px;
-    text-align: center;
+    background: #f0f4f8;
+    padding: 20px;
     border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    transition: transform 0.3s;
 }
 
 .servicio:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
 }
 
-.servicio img {
-    width: 80px;
-    margin-bottom: 15px;
+.servicio i {
+    font-size: 2.5rem;
+    color: #006699;
+    margin-bottom: 10px;
 }
 
-/* ===== Sobre Nosotros ===== */
+/* ====== SOBRE NOSOTROS ====== */
 #nosotros {
-    padding: 80px 0;
-    background-color: #f9f9f9;
-    text-align: center;
+    padding: 40px 20px;
+    background: #eef2f3;
 }
 
-#nosotros h2 {
-    margin-bottom: 20px;
-    font-size: 2rem;
-}
-
-#nosotros p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-}
-
-/* ===== Testimonios ===== */
+/* ====== TESTIMONIOS ====== */
 #testimonios {
-    padding: 80px 0;
-    background-color: #fff;
-    text-align: center;
+    padding: 40px 20px;
+    background: white;
 }
 
-#testimonios h2 {
-    margin-bottom: 50px;
-    font-size: 2rem;
-}
-
-.testimonios-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.testimonial {
-    background-color: #f1f1f1;
-    padding: 30px 20px;
-    border-radius: 10px;
+#testimonios blockquote {
+    background: #f0f0f0;
+    padding: 15px;
+    border-left: 5px solid #006699;
+    margin: 15px auto;
+    max-width: 600px;
     font-style: italic;
 }
 
-/* ===== Contacto ===== */
-#contacto {
-    padding: 80px 0;
-    background-color: #f9f9f9;
+/* ====== UBICACIÓN ====== */
+#ubicacion {
+    padding: 40px 20px;
+    background: #eef2f3;
+    text-align: center;
 }
 
-#contacto h2 {
+.btn-maps {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #006699;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-maps i {
+    margin-right: 5px;
+}
+
+/* ====== CONTACTO ====== */
+#contacto {
+    padding: 40px 20px;
+    background: white;
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 2rem;
 }
 
 #contacto form {
     max-width: 500px;
-    margin: 0 auto 30px auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
-#contacto input, #contacto textarea {
-    padding: 12px;
+#contacto input, 
+#contacto textarea {
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
+    border-radius: 5px;
 }
 
 #contacto button {
-    padding: 15px;
-    background-color: #ff9800;
+    padding: 10px;
+    background: #006699;
     color: white;
-    font-weight: bold;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
 }
 
-#contacto button:hover {
-    background-color: #e68a00;
-}
-
-.contacto-extra {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.contacto-extra a {
+.btn-whatsapp {
     display: inline-block;
-    background-color: #25D366;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.contacto-extra a:hover {
-    background-color: #1ebe57;
-}
-
-.map-container {
     margin-top: 20px;
-    border-radius: 10px;
-    overflow: hidden;
+    padding: 10px 15px;
+    background: #25D366;
+    color: white;
+    border-radius: 5px;
 }
 
-/* ===== Footer ===== */
+.btn-whatsapp i {
+    margin-right: 5px;
+}
+
+/* ====== PIE DE PÁGINA ====== */
 footer {
-    background-color: #1e1e1e;
+    background: #003366;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px;
 }
