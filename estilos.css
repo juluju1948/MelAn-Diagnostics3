@@ -1,4 +1,4 @@
-/* Reset de estilos básicos */
+/* ===== Reset básico ===== */
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +12,7 @@ body {
     color: #333;
 }
 
+/* ===== Contenedor general ===== */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -19,27 +20,30 @@ body {
     padding: 20px;
 }
 
+/* ===== Header y navegación ===== */
 header {
     background: #333;
     color: #fff;
     padding: 10px 0;
 }
 
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 header .logo h1 {
-    margin: 0;
     font-size: 4.5rem;
-    display: inline-block;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    text-align: right;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -48,32 +52,41 @@ nav ul li a {
     font-weight: 700;
 }
 
+/* ===== Hero ===== */
 #hero {
-    background-size: 450px 200px;
-    color: rgb(13, 11, 11);
-    padding: 50px 0;
+    background: url('ruta-de-tu-imagen.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
     text-align: center;
+    padding: 80px 20px;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+#hero p {
+    font-size: 1.2rem;
 }
 
 #hero .btn {
     display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background: #ff6600;
+    padding: 15px 25px;
+    margin-top: 25px;
+    background-color: #ff6600;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 8px;
+    transition: background 0.3s;
 }
 
 #hero .btn:hover {
-    background: #ff8533;
+    background-color: #ff8533;
 }
 
-section {
-    padding: 40px 0;
-}
-
+/* ===== Sección de Servicios ===== */
 #servicios .servicios-grid {
     display: flex;
     flex-wrap: wrap;
@@ -84,58 +97,37 @@ section {
     background: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     flex: 1;
     min-width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-#contacto label {
-    margin-top: 10px;
+#servicios .servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
-#contacto input,
-#contacto textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
+/* ===== Sección de Testimonios ===== */
+#testimonios blockquote {
+    background-color: #fff;
+    padding: 20px;
+    border-left: 5px solid #007BFF;
+    margin: 20px 0;
     border-radius: 5px;
+    font-style: italic;
 }
 
-#contacto button {
-    margin-top: 20px;
-    padding: 10px;
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-#contacto button:hover {
-    background: #555;
-}
-
-.contact-info p {
+#testimonios footer {
     margin-top: 10px;
+    font-weight: bold;
+    color: #555;
 }
 
-.contact-info a {
-    color: #333;
-    text-decoration: none;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-/* ===== Estilos para la sección de contacto ===== */
+/* ===== Contacto ===== */
 #contacto {
     padding: 40px 20px;
-    background-color: #f8f9fa; /* Fondo suave */
+    background-color: #f8f9fa;
 }
 
 #contacto h2 {
@@ -144,14 +136,13 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Formulario */
 #contacto form {
-    display: flex;
-    flex-direction: column;
     background: #fff;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: auto;
 }
 
 #contacto label {
@@ -169,7 +160,6 @@ footer {
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 14px;
-    box-sizing: border-box;
 }
 
 #contacto textarea {
@@ -185,6 +175,7 @@ footer {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 #contacto button[type="submit"]:hover {
@@ -193,86 +184,42 @@ footer {
 
 /* Botón de WhatsApp */
 #contacto a[href*="wa.me"] {
-    font-size: 18px;
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
     font-weight: bold;
+    margin-top: 15px;
     transition: background 0.3s;
 }
 
-#contacto a[href*="wa.me"] {
-    display: inline-block;
-    background: #25D366;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
+#contacto a[href*="wa.me"]:hover {
+    background-color: #1ebe57;
 }
-
 
 /* Información de contacto */
 #contacto .contact-info p {
     margin: 5px 0;
     color: #333;
     font-size: 15px;
+    text-align: center;
 }
 
-/* Mapa */
-#contacto iframe {
+/* Google Maps */
+.map-container iframe {
+    width: 100%;
+    height: 300px;
     border-radius: 10px;
-    margin-top: 15px;
-}
-/* ===================== */
-/* HERO SECTION ESTILO   */
-/* ===================== */
-#hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('img/hero-bg.jpg') center/cover no-repeat;
-  color: white;
 }
 
-#hero h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-#hero p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin-bottom: 25px;
-}
-
-#hero .btn-cta {
-  background-color: #ff5722;
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-#hero .btn-cta:hover {
-  background-color: #e64a19;
-}
-
-/* Ajuste en pantallas pequeñas */
-@media (max-width: 768px) {
-  #hero {
-    padding: 60px 15px;
-  }
-  #hero h1 {
-    font-size: 2rem;
-  }
-  #hero p {
-    font-size: 1rem;
-  }
+/* ===== Footer ===== */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
 }
