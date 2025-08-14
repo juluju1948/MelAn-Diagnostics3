@@ -3,223 +3,241 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
 }
 
-/* ===== Contenedor general ===== */
+/* ===== Contenedor ===== */
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+    margin: 0 auto;
 }
 
-/* ===== Header y navegación ===== */
+/* ===== Header ===== */
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-header .container {
+header .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .logo h1 {
-    font-size: 4.5rem;
-}
-
-nav ul {
+header nav ul {
+    display: flex;
     list-style: none;
+    gap: 20px;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
+header nav ul li a {
+    color: white;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff9800;
 }
 
 /* ===== Hero ===== */
 #hero {
-    background: url('ruta-de-tu-imagen.jpg') no-repeat center center;
-    background-size: cover;
-    color: #fff;
+    background: url('imagenes/hero-taller.jpg') center/cover no-repeat;
+    color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 120px 20px;
 }
 
 #hero h2 {
     font-size: 2.5rem;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 
 #hero p {
     font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
-#hero .btn {
-    display: inline-block;
-    padding: 15px 25px;
-    margin-top: 25px;
-    background-color: #ff6600;
-    color: #fff;
+.btn-cta {
+    background-color: #ff9800;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 8px;
     transition: background 0.3s;
 }
 
-#hero .btn:hover {
-    background-color: #ff8533;
+.btn-cta:hover {
+    background-color: #e68a00;
 }
 
 /* ===== Sección de Servicios ===== */
-#servicios .servicios-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-#servicios .servicio {
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    flex: 1;
-    min-width: 280px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#servicios .servicio:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-}
-
-/* ===== Sección de Testimonios ===== */
-#testimonios blockquote {
+#servicios {
+    padding: 80px 0;
     background-color: #fff;
-    padding: 20px;
-    border-left: 5px solid #007BFF;
-    margin: 20px 0;
-    border-radius: 5px;
-    font-style: italic;
 }
 
-#testimonios footer {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #555;
+#servicios h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: #1e1e1e;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.servicio {
+    background-color: #f1f1f1;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
+}
+
+.servicio img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+/* ===== Sobre Nosotros ===== */
+#nosotros {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#nosotros h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+#nosotros p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* ===== Testimonios ===== */
+#testimonios {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#testimonios h2 {
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+.testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.testimonial {
+    background-color: #f1f1f1;
+    padding: 30px 20px;
+    border-radius: 10px;
+    font-style: italic;
 }
 
 /* ===== Contacto ===== */
 #contacto {
-    padding: 40px 20px;
-    background-color: #f8f9fa;
+    padding: 80px 0;
+    background-color: #f9f9f9;
 }
 
 #contacto h2 {
     text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    font-size: 2rem;
 }
 
 #contacto form {
-    background: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    max-width: 400px;
-    margin: auto;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-#contacto label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-    color: #555;
-}
-
-#contacto input,
-#contacto textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-}
-
-#contacto textarea {
-    min-height: 100px;
-}
-
-#contacto button[type="submit"] {
-    margin-top: 15px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
+#contacto input, #contacto textarea {
     padding: 12px;
-    border-radius: 5px;
-    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+#contacto button {
+    padding: 15px;
+    background-color: #ff9800;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s;
 }
 
-#contacto button[type="submit"]:hover {
-    background-color: #0056b3;
+#contacto button:hover {
+    background-color: #e68a00;
 }
 
-/* Botón de WhatsApp */
-#contacto a[href*="wa.me"] {
+.contacto-extra {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contacto-extra a {
     display: inline-block;
     background-color: #25D366;
-    color: #fff;
+    color: white;
     padding: 12px 20px;
     border-radius: 8px;
     text-decoration: none;
-    font-size: 16px;
     font-weight: bold;
-    margin-top: 15px;
-    transition: background 0.3s;
+    margin-bottom: 15px;
 }
 
-#contacto a[href*="wa.me"]:hover {
+.contacto-extra a:hover {
     background-color: #1ebe57;
 }
 
-/* Información de contacto */
-#contacto .contact-info p {
-    margin: 5px 0;
-    color: #333;
-    font-size: 15px;
-    text-align: center;
-}
-
-/* Google Maps */
-.map-container iframe {
-    width: 100%;
-    height: 300px;
+.map-container {
+    margin-top: 20px;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 /* ===== Footer ===== */
 footer {
-    background: #333;
-    color: #fff;
+    background-color: #1e1e1e;
+    color: white;
     text-align: center;
     padding: 20px 0;
-    margin-top: 40px;
 }
